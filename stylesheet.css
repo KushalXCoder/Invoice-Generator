@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.rows1 {
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.rows2 {
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.logo {
+  font-family: "Covered By Your Grace", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+}
+
+.rows1 h1 {
+    margin-top: 20px;
+    color: #333;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.rows1 h3 {
+    margin-bottom: 20px;
+    color: #555;
+    font-size: 24px;
+}
+
+p, button {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #666;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #28a745;
+    color: #fff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #007bff;
+    color: white;
+}
+
+thead th {
+    padding: 15px;
+    font-size: 18px;
+    text-align: left;
+}
+
+tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:last-child {
+    border-bottom: none;
+}
+
+tbody td {
+    padding: 15px;
+    font-size: 16px;
+}
+
+td input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+td p {
+    padding: 10px;
+    margin: 0;
+    font-size: 16px;
+}
+
+.amount {
+    margin-top: 1px;
+    margin-bottom: 0px;
+    padding: 10px;
+}
+
+.add-item, .delete-item {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.add-item {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.delete-item {
+    background-color: #dc3545 !important;
+    color: #fff !important;
+    margin-left: 20px;
+}
+
+.add-item:hover, .delete-item:hover {
+    opacity: 0.9;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.billing {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.billing h3 {
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.st, .ft {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.billing input {
+    padding: 5px;
+}
+
+.nt {
+    display: flex;
+    flex-direction: column;
+}
+
+.nt p {
+    padding: 8px;
+}
+
+.nt input {
+    height: 60px;
+    width: 402px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 13px;
+    padding-bottom: 32px;
+}
+
+.box {
+    border: 2px solid black;
+    width: 100px;
+    margin-bottom: 0px !important;
+    margin-right: 0px !important;
+}
+
+.sub-box {
+    width: 194px;
+    border: none;
+}
+
+.sub-box1 {
+    width: 194px;
+    border: none;
+}
+
+pre {
+    margin-bottom: 0px !important;
+}
+
+@media only screen and (max-width: 992px) {
+    .rows1 {
+        text-align: center;
+        align-items: center;
+    }
+
+    .image {
+        display: none;
+    }
+
+    .rows2 {
+        margin-top: 50px !important;
+    }
+}
+
+@media only screen and (max-width: 612px) {
+    * {
+        overflow-x: hidden;
+        scroll-snap-type: none;
+    }
+
+    .content h1, .content h3 {
+        overflow-y: hidden;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    * {
+        overflow-x: hidden;
+    }
+    .content h1, .content h3 {
+        overflow-y: hidden;
+    }
+}
